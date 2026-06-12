@@ -157,7 +157,7 @@ digraph job_hunter {
 - ✅ 岗位搜索、匹配分析、薪资风评整合、报告生成
 - ❌ 不做简历编写（交 resume-builder）
 - ❌ 不做自动投递（风险高，用户手动）
-- ❌ 不做面试辅导（可作为未来 skill）
+- ❌ 不做面试辅导（交 interview-griller skill）
 
 ## Common Mistakes
 
