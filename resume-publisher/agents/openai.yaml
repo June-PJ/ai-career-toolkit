@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resume Publisher"
+  short_description: "Turn Markdown resumes into polished DOCX deliverables."
+  default_prompt: "Convert this Markdown resume into a polished Word version for job applications."

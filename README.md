@@ -7,6 +7,7 @@
 | Skill | 功能 | 依赖 |
 |-------|------|------|
 | [resume-builder](./resume-builder/) | 对话式简历完善：挖掘经历、包装增强、制造技术重难点 | 无外部依赖 |
+| [resume-publisher](./resume-publisher/) | 简历投递版生成：将 Markdown 简历排版导出为 DOCX | python-docx |
 | [interview-griller](./interview-griller/) | 模拟面试拷打：基于简历深挖追问、实时提示、评分+学习报告 | 无外部依赖 |
 | [job-hunter](./job-hunter/) | 自动化社招岗位海选：并行爬取、智能匹配、薪资风评整合 | Playwright MCP |
 
@@ -19,6 +20,7 @@
 ```bash
 git clone https://github.com/June-PJ/ai-career-toolkit.git
 cp -r ai-career-toolkit/resume-builder <your-agent-skills-dir>/
+cp -r ai-career-toolkit/resume-publisher <your-agent-skills-dir>/
 cp -r ai-career-toolkit/interview-griller <your-agent-skills-dir>/
 cp -r ai-career-toolkit/job-hunter <your-agent-skills-dir>/
 ```
@@ -44,6 +46,10 @@ cp -r ai-career-toolkit/job-hunter <your-agent-skills-dir>/
 用户 → "帮我写简历"
        → resume-builder skill 启动
        → 对话引导 → 输出 resume.md
+
+用户 → "把简历导出成投递版 Word" + resume.md
+       → resume-publisher skill 启动
+       → 投递检查 → 排版生成 DOCX
 
 用户 → "拷打我的简历" + resume.md
        → interview-griller skill 启动
